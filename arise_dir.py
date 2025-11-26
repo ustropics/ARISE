@@ -1,4 +1,4 @@
-# arise_find_nc.py  — THIS WILL FIND THE REAL FILES
+# arise_dir.py (find files on AWS bucket)
 import s3fs
 fs = s3fs.S3FileSystem(anon=True)
 

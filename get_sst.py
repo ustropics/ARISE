@@ -1,4 +1,4 @@
-# download_sst_only.py  ← Run this once and you're done forever
+# download_sst_only.py
 import s3fs
 from tqdm import tqdm
 import os
@@ -6,7 +6,6 @@ import os
 fs = s3fs.S3FileSystem(anon=True)
 os.makedirs("ARISE_SST_files", exist_ok=True)
 
-# Only the SST time-series files (already global monthly averages!)
 sai_files = fs.glob(
     "ncar-cesm2-arise/ARISE-SAI-1.5/*/atm/proc/tseries/month_1/*SST*.nc")
 ctrl_files = fs.glob(

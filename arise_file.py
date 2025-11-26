@@ -1,4 +1,4 @@
-# arise_FINAL_PROOF.py  — THIS SHOWS THE ACTUAL FILES
+# arise_file.py (shows meta data for files on local)
 import s3fs
 fs = s3fs.S3FileSystem(anon=True)
 

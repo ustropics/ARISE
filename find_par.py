@@ -1,4 +1,4 @@
-# arise_find_variables.py  ← THIS WILL TELL US THE TRUTH ABOUT PAR
+# find_par.py (get files for PAR variable)
 import s3fs
 fs = s3fs.S3FileSystem(anon=True)
 
@@ -18,11 +18,11 @@ def ls(path, n=30):
             print(f"   ... and {len(items) - n} more items")
         return items
     except FileNotFoundError:
-        print("   ❌ Path does not exist")
+        print("Path does not exist")
         return []
 
 
-# Known good path — this is where the monthly time-series live
+# Path to monthly time series
 path = "ncar-cesm2-arise/ARISE-SAI-1.5/b.e21.BW.f09_g17.SSP245-TSMLT-GAUSS-DEFAULT.001/atm/proc/tseries/month_1"
 
 print("STEP 1: Inside the monthly time-series folder (where SST, TS, etc. live)")

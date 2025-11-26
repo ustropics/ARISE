@@ -1,4 +1,4 @@
-# download_sss.py  ← Surface salinity for all members
+# download_sss.py (surface salinity for all members)
 import s3fs
 from tqdm import tqdm
 import os

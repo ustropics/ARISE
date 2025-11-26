@@ -1,4 +1,4 @@
-# download_fsds_for_par.py  ← THIS WORKS
+# get_par.py. (downloads PAR files)
 import s3fs
 from tqdm import tqdm
 import os
